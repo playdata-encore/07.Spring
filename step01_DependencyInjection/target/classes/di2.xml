@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="car" class="model.domain.Car" scope="singleton">
+		<property name="carName" value="소나타"></property>
+		<property name="carNumber" value="88"></property>
+	</bean>
+	
+	<bean id="c1" class="model.domain.Customer" scope="singleton">
+		<property name="name" value="김재웅"></property>
+		<property name="age" value="50"></property>
+		<property name="car" ref="car"></property>
+	</bean>
+</beans>
