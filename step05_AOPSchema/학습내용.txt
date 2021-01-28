@@ -1,0 +1,12 @@
+AOP
+Schema 기반
+	-xml 기반
+	
+AOP + OOP = Spring
+
+before
+after
+returning
+throwing
+
+around
