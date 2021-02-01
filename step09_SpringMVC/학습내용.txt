@@ -1,0 +1,25 @@
+학습 내용
+
+1. 실습 구조
+	html => spring framework => sub controller => jsp
+	
+2. 실습 내용
+	1단계
+		기본 애노테이션 학습
+		
+	2단계
+		URL Template
+	
+	3단계
+		client의 상태 유지 기술
+			session
+				- jsp 내장 객체
+				- 서버 메모리에 데이터 저장
+			cookie
+				- client 시스템에 데이터 저장
+		
+3. 개념 및 기술
+	1. controller에서 redirect로 이동시
+		: view를 직접 지정해서 실행
+		spring framework의 frontcontroller에게 view 정보 제공 없이 controller 에서 jsp로 이동
+		* jsp 파일의 위치는 WEB-INF 라위에 존재하면 안됨!!!

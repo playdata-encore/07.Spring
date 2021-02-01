@@ -23,6 +23,7 @@ public class TestController {
 			mv.addObject("key", "data"); // 데이터 저장(model 저장)
 			url = "finalView";
 		} catch (Exception e) {
+			e.printStackTrace();
 			mv.addObject("error", e.getMessage());
 		}
 		
